@@ -4,95 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog de Viajes</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Cards Flexbox</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
 
-    <header class="site-header contenedor">
-        <img src="/img/logo.png" alt="Logotipo">
+    <header class="header hero">
+        <div class="barra">
+            <div class="contenedor">
+                <div class="logo">
+                    <img src="img/logo.png" class="logo-img">
+                </div>
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> <!--Barra-->
+        <div class="header-contenido">
+            <div class="contenedor">
+                <h1>Bienvenido a Blog de Viajes</h1>
+            </div>
+        </div>
     </header>
 
-    <div class="barra">
-        <a href="#nav" class="mobile-menu">
-            <i class="fas fa-ellipsis-v"></i>
-        </a>
 
-        <nav id="nav" class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Blog</a>
-            <a href="#">Tienda</a>
-            <a href="#">Contacto</a>
+    <div class="contenedor">
+            <main class="contenido-principal">
+                <h2>Últimas Entradas</h2>
+                <article class="entrada">
+                    <img src="img/01.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>Tips para viajar con poco presupuesto</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <img src="img/02.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>Todo lo necesario para tu viaje</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <img src="img/03.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>El equipo necesario para tomar las mejores fotografías</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <img src="img/04.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>Checklist para tu próximo viaje</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <img src="img/05.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>Los mejores lugares para visitar este otoño</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <img src="img/06.jpg" alt="texto entrada">
+                    <div class="contenido">
+                        <h3>Los mejores lugares para visitar con montañas</h3>
+                        <p>Publicado el: <span>19 Julio, 2018</span></p>
+                        <p>Por: <span>Blog Viajes</span></p>
+                        <a href="#" class="boton"> Leer más</a>
+                    </div>
+                </article>
+            </main>
 
-            <a href="#" class="cerrar">
-                <i class="fas fa-times"></i>
-        </a>
-        </nav>
-    </div>
-   
-    <div class="contenedor clearfix">
-        <main class="contenido-principal">
-            <article class="entrada">
-                <h2>Viajar a Londres</h2>
-                <img src="/img/imagen_1.jpg" alt="Imagen Viaje a Londres">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-            <article class="entrada">
-                <h2>Puente de la Torre</h2>
-                <img src="/img/imagen_2.jpg" alt="Imagen Puente de la Torre">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-            <article class="entrada">
-                <h2>Metro de Londres</h2>
-                <img src="/img/imagen_3.jpg" alt="Imagen Metro de Londres">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="#" class="boton">Leer Más</a>
-            </article>
-        </main>
-
-        <aside class="sidebar">
-            <section class="otras-entradas">
-                <h2>Otros Posts</h2>
+            <div class="categorias">
                 <ul>
-                    <li><a href="#">Entrada 1</a></li>
-                    <li><a href="#">Entrada 2</a></li>
-                    <li><a href="#">Entrada 3</a></li>
-                    <li><a href="#">Entrada 4</a></li>
-                    <li><a href="#">Entrada 5</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-map-pin"></i>
+                            Actividades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-music"></i>
+                            Festivales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-utensils"></i>
+                            Restaurantes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-check"></i>
+                            Tips
+                        </a>
+                    </li>
                 </ul>
-            </section>
-        </aside>
-    </div>
+            </div>
+    </div><!--.contenido-->
 
-    <footer class="footer-sitio">
-        <div class="contenedor clearfix">
-            <section class="nosotros">
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="nosotros caja">
                 <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere animi ut suscipit praesentium asperiores dolorem ipsum commodi repellat nam corporis blanditiis laudantium quas saepe vero esse nihil, assumenda, aliquid.</p>
-            </section>
-            <section class="menu">
-                <h2>Menú de Navegación</h2>
-                <nav>
-                    <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Tienda</a>
-                    <a href="#">Contacto</a>
-                </nav>
-            </section>
+                <p>Maecenas rhoncus dolor nisi, nec lobortis sapien pulvinar ut. Duis dolor lacus, laoreet vel massa a, ultrices varius tellus. Aliquam sed ornare augue. Donec vel molestie quam, eget imperdiet nibh.</p>
+
+                <p>Sed eu pulvinar ante, sit amet facilisis libero. Fusce placerat, risus at dapibus viverra, diam mauris suscipit augue, a sagittis felis libero in lacus. Sed sit amet erat at augue congue malesuada et eget lacus. </p>
+            </div>
+            <div class="entradas caja">
+                <h2>Últimas Entradas</h2>
+                <ul>
+                    <li>Ut lobortis turpis lacinia enim</li>
+                    <li>Ut lobortis turpis lacinia enim</li>
+                    <li>Ut lobortis turpis lacinia enim</li>
+                    <li>Ut lobortis turpis lacinia enim</li>
+                    <li>Ut lobortis turpis lacinia enim</li>
+                </ul>
+            </div>
+            <div class="siguenos caja">
+                <h2>Síguenos</h2>
+                <nav class="sociales">
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com"><span> Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com"><span> Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com"><span> YouTube</span></a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com"><span> Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com"><span> Pinterest</span></a>
+                        </li>
+                    </ul>
+                </nav>            
+            </div>
         </div>
-        <p class="copyright">BlogDeViajes - Todos los Derechos Reservados 2021 &copy</p>
+        <p class="copyright">Blog De Viajes 2021. &copy;</p>
     </footer>
+    
 </body>
 </html>
